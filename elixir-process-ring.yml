@@ -1,0 +1,10 @@
+name: Elixir Process ring
+on: [workflow_dispatch]
+jobs:
+  Elixir-process-ring:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v4
+        - run: sudo apt-get install elixir erlang
+        - run: cd elixir-code
+        - run: elixir elixir-code 
