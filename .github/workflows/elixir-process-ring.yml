@@ -6,5 +6,4 @@ jobs:
     steps:
         - uses: actions/checkout@v4
         - run: sudo apt-get install elixir erlang
-        - run: cd elixir-code
-        - run: elixir elixir-code.exs
+        - run: elixir elixir-code/process_ring.exs
