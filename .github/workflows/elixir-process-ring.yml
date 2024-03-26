@@ -6,4 +6,9 @@ jobs:
     steps:
         - uses: actions/checkout@v4
         - run: sudo apt-get install elixir erlang
-        - run: elixir elixir-code/process_ring.exs
+        - run: elixir elixir-code/process_ring.exs > output.txt
+        - name: Archive code Output
+          uses: actions/upload-artifact@v4
+          with:
+              name: output
+              path: output.txt  
