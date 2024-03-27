@@ -1,0 +1,9 @@
+name: Ping Test
+run-name: Ping test workflow
+on: [workflow_dispatch]
+jobs:
+  Ping-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: DockerHub Authentications
+      - run: docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password ${{ secrets.DOCKERHUB_PASSWORD }}
