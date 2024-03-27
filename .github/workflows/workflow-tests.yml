@@ -1,5 +1,5 @@
-name: Ping Test
-run-name: Ping test workflow
+name: Workflow tests
+run-name: workflow-tests
 on: [workflow_dispatch]
 jobs:
   Ping-test:
