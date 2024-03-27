@@ -5,5 +5,5 @@ jobs:
   Ping-test:
     runs-on: ubuntu-latest
     steps:
-      - run: apt-get install nmap
+      - run: sudo apt-get install nmap
       - run: nmap -sT 8.8.8.8
