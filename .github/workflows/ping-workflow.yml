@@ -1,0 +1,8 @@
+name: GitHub Actions Demo
+run-name: Ping test workflow
+on: [workflow_dispatch]
+jobs:
+  Ping-test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: ping -c 10 -v 8.8.8.8
