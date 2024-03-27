@@ -1,5 +1,5 @@
-name: Workflow tests
-run-name: workflow-tests
+name: Workflow test
+run-name: workflow-t
 on: [workflow_dispatch]
 jobs:
   authentication-test:
