@@ -2,8 +2,7 @@ name: Workflow tests
 run-name: workflow-tests
 on: [workflow_dispatch]
 jobs:
-  Ping-test:
+  authentication-test:
     runs-on: ubuntu-latest
     steps:
-      - name: DockerHub Authentications
-        run: docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password ${{ secrets.DOCKERHUB_PASSWORD }}
+      - run: docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password ${{ secrets.DOCKERHUB_PASSWORD }}
